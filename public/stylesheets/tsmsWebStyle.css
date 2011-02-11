@@ -1,0 +1,393 @@
+BODY {
+	SCROLLBAR-ARROW-COLOR: white; TEXT-ALIGN: left; SCROLLBAR-FACE-COLOR: #73aed8; LINE-HEIGHT: 11pt; FONT-VARIANT: normal; FONT-STYLE: normal; MARGIN: 1px; SCROLLBAR-DARKSHADOW-COLOR: #629ec9; SCROLLBAR-BASE-COLOR: #629ec9; SCROLLBAR-HIGHLIGHT-COLOR: white; COLOR: black; SCROLLBAR-SHADOW-COLOR: white; FONT-SIZE: 9pt; FONT-WEIGHT: normal
+}
+TEXTAREA {
+	BORDER-BOTTOM: #3e3e3e 1px solid; BORDER-LEFT: #3e3e3e 1px solid; BACKGROUND-COLOR: #ffffff; FONT-FAMILY: 宋 体; COLOR: #333333; BORDER-TOP: #3e3e3e 1px solid; BORDER-RIGHT: #3e3e3e 1px solid
+}
+FORM {
+	MARGIN: 0px; FONT-FAMILY: 宋 体
+}
+UL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+DL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+DD {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+P {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H1 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H2 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H3 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H4 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H5 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H6 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+FORM {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+FIELDSET {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.InputStyle {
+	BORDER-BOTTOM: #3e3e3e 1px solid; BORDER-LEFT: #3e3e3e 1px solid; BACKGROUND-COLOR: #ffffff; WIDTH: 121px; HEIGHT: 20px; COLOR: #333333; FONT-SIZE: 9pt; BORDER-TOP: #3e3e3e 1px solid; BORDER-RIGHT: #3e3e3e 1px solid
+}
+.InputStyleRed {
+	BORDER-BOTTOM: #ff0000 1px solid; BORDER-LEFT: #ff0000 1px solid; BACKGROUND-COLOR: #ffffff; WIDTH: 121px; HEIGHT: 20px; COLOR: #333333; FONT-SIZE: 9pt; BORDER-TOP: #ff0000 1px solid; BORDER-RIGHT: #ff0000 1px solid
+}
+.InputStyle2 {
+	BORDER-BOTTOM: #3e3e3e 1px solid; BORDER-LEFT: #3e3e3e 1px solid; BACKGROUND-COLOR: #ffffff; HEIGHT: 20px; COLOR: #333333; FONT-SIZE: 9pt; BORDER-TOP: #3e3e3e 1px solid; BORDER-RIGHT: #3e3e3e 1px solid
+}
+.InputStyle3 {
+	BORDER-BOTTOM: #1f7ec5 1px solid; BORDER-LEFT: #1f7ec5 1px solid; BACKGROUND-COLOR: #ffffff; WIDTH: 80px; HEIGHT: 18px; COLOR: #000000; FONT-SIZE: 9pt; BORDER-TOP: #1f7ec5 1px solid; BORDER-RIGHT: #1f7ec5 1px solid
+}
+.InputStyle4 {
+	BORDER-BOTTOM: #3e3e3e 1px solid; BORDER-LEFT: #3e3e3e 1px solid; BACKGROUND-COLOR: #ffffff; WIDTH: 100px; HEIGHT: 20px; COLOR: #333333; FONT-SIZE: 9pt; BORDER-TOP: #3e3e3e 1px solid; BORDER-RIGHT: #3e3e3e 1px solid
+}
+.InputStyle5 {
+	BORDER-BOTTOM: #3e3e3e 1px solid; BORDER-LEFT: #3e3e3e 1px solid; BACKGROUND-COLOR: #ffffff; COLOR: #333333; FONT-SIZE: 9pt; BORDER-TOP: #3e3e3e 1px solid; BORDER-RIGHT: #3e3e3e 1px solid
+}
+.InputStyle6 {
+	BORDER-BOTTOM: #1f7ec5 1px solid; BORDER-LEFT: #1f7ec5 1px solid; BACKGROUND-COLOR: #ffffff; WIDTH: 270px; HEIGHT: 18px; COLOR: #000000; FONT-SIZE: 9pt; BORDER-TOP: #1f7ec5 1px solid; BORDER-RIGHT: #1f7ec5 1px solid
+}
+.InputReadOnlyStyle {
+	BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; BACKGROUND-COLOR: #ffffff; WIDTH: 121px; HEIGHT: 20px; COLOR: #333333; FONT-SIZE: 9pt; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid
+}
+.InputReadOnlyStyle2 {
+	BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; BACKGROUND-COLOR: #ffffff; HEIGHT: 20px; COLOR: #333333; FONT-SIZE: 9pt; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid
+}
+.InputByte {
+	TEXT-ALIGN: left; BORDER-RIGHT-WIDTH: 0px; MARGIN: 0px; WIDTH: 10em; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: 1.2em; COLOR: #000000; BORDER-LEFT-WIDTH: 0px
+}
+.InputReadOnlyStyle3 {
+	BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; BACKGROUND-COLOR: #ffffff; WIDTH: 100px; HEIGHT: 20px; COLOR: #333333; FONT-SIZE: 9pt; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid
+}
+A.LinkStyle:link {
+	COLOR: #017d7d; TEXT-DECORATION: none
+}
+A.LinkStyle:visited {
+	COLOR: #017d7d; TEXT-DECORATION: none
+}
+A.LinkStyle:hover {
+	COLOR: #0000cd; TEXT-DECORATION: none
+}
+A.LinkStyle4:link {
+	COLOR: black; TEXT-DECORATION: none
+}
+A.LinkStyle4:visited {
+	COLOR: black; TEXT-DECORATION: none
+}
+A.LinkStyle4:hover {
+	BACKGROUND-COLOR: #00ccff; COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.LinkStyle6:link {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.LinkStyle6:visited {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.LinkStyle6:hover {
+	COLOR: #ccffff; TEXT-DECORATION: none
+}
+A.LinkStyle2:link {
+	COLOR: #0048a1; TEXT-DECORATION: none
+}
+A.LinkStyle2:visited {
+	COLOR: #0048a1; TEXT-DECORATION: none
+}
+A.LinkStyle2:hover {
+	COLOR: #0048a1; TEXT-DECORATION: none
+}
+A.LinkStyle3:link {
+	COLOR: #339999; TEXT-DECORATION: none
+}
+A.LinkStyle3:visited {
+	COLOR: #339999; TEXT-DECORATION: none
+}
+A.LinkStyle3:hover {
+	COLOR: #0000cd; TEXT-DECORATION: none
+}
+A.LinkStyle5 {
+	BORDER-BOTTOM: #9aafe5 1px solid; BORDER-LEFT: #9aafe5 1px solid; PADDING-BOTTOM: 1px; LINE-HEIGHT: 10px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 6px; PADDING-RIGHT: 6px; COLOR: #105cb6; MARGIN-LEFT: 3px; BORDER-TOP: #9aafe5 1px solid; MARGIN-RIGHT: 3px; BORDER-RIGHT: #9aafe5 1px solid; TEXT-DECORATION: none; PADDING-TOP: 2px
+}
+A.LinkStyle5Curr {
+	BORDER-BOTTOM: #edcc87 1px solid; BORDER-LEFT: #edcc87 1px solid; PADDING-BOTTOM: 1px; LINE-HEIGHT: 20px; BACKGROUND-COLOR: #f1e4b4; PADDING-LEFT: 6px; PADDING-RIGHT: 6px; COLOR: #ff3300; MARGIN-LEFT: 3px; BORDER-TOP: #edcc87 1px solid; FONT-WEIGHT: bold; MARGIN-RIGHT: 3px; BORDER-RIGHT: #edcc87 1px solid; TEXT-DECORATION: none; PADDING-TOP: 2px
+}
+A.LinkStyle5:hover {
+	BORDER-BOTTOM: #2e6ab1 1px solid; BORDER-LEFT: #2e6ab1 1px solid; BACKGROUND-COLOR: #2e6ab1; COLOR: #ffffff; BORDER-TOP: #2e6ab1 1px solid; BORDER-RIGHT: #2e6ab1 1px solid; TEXT-DECORATION: none
+}
+.ButtonStyle {
+	BACKGROUND-COLOR: #9bc9fc; WIDTH: 56px; HEIGHT: 20px; COLOR: #000000
+}
+.ButtonStyle2 {
+	BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #b1e3fc; WIDTH: 56px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: 20px; COLOR: #000000; BORDER-LEFT-WIDTH: 0px
+}
+.ButtonStyle3 {
+	BORDER-BOTTOM: #7b9ebd 1px solid; FILTER: progid: DXImageTransform . Microsoft . Gradient( GradientType = 0, StartColorStr = #ffffff, EndColorStr = #cecfde ); BORDER-LEFT: #7b9ebd 1px solid; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; COLOR: black; FONT-SIZE: 12px; BORDER-TOP: #7b9ebd 1px solid; CURSOR: hand; BORDER-RIGHT: #7b9ebd 1px solid; PADDING-TOP: 2px
+}
+.ButtonStyle3_mouseout {
+	BORDER-BOTTOM: #7ebf4f 1px solid; FILTER: progid: DXImageTransform . Microsoft . Gradient( GradientType = 0, StartColorStr = #ffffff, EndColorStr = #B3D997 ); BORDER-LEFT: #7ebf4f 1px solid; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; COLOR: black; FONT-SIZE: 12px; BORDER-TOP: #7ebf4f 1px solid; CURSOR: hand; BORDER-RIGHT: #7ebf4f 1px solid; PADDING-TOP: 2px
+}
+.ButtonStyle3_mouseover {
+	BORDER-BOTTOM: #7ebf4f 1px solid; FILTER: progid: DXImageTransform . Microsoft . Gradient( GradientType = 0, StartColorStr = #ffffff, EndColorStr = #CAE4B6 ); BORDER-LEFT: #7ebf4f 1px solid; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; COLOR: black; FONT-SIZE: 12px; BORDER-TOP: #7ebf4f 1px solid; CURSOR: hand; BORDER-RIGHT: #7ebf4f 1px solid; PADDING-TOP: 2px
+}
+.ButtonStyle_mouseout {
+	BORDER-BOTTOM: #2c59aa 1px solid; FILTER: progid: DXImageTransform . Microsoft . Gradient( GradientType = 0, StartColorStr = #ffffff, EndColorStr = #C3DAF5 ); BORDER-LEFT: #2c59aa 1px solid; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; COLOR: black; FONT-SIZE: 12px; BORDER-TOP: #2c59aa 1px solid; CURSOR: hand; BORDER-RIGHT: #2c59aa 1px solid; PADDING-TOP: 2px
+}
+.ButtonStyle_mouseover {
+	BORDER-BOTTOM: #2c59aa 1px solid; FILTER: progid: DXImageTransform . Microsoft . Gradient( GradientType = 0, StartColorStr = #ffffff, EndColorStr = #D7E7FA ); BORDER-LEFT: #2c59aa 1px solid; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; COLOR: black; FONT-SIZE: 12px; BORDER-TOP: #2c59aa 1px solid; CURSOR: hand; BORDER-RIGHT: #2c59aa 1px solid; PADDING-TOP: 2px
+}
+.ButtonStyle_mousedown {
+	BORDER-BOTTOM: #ffe400 1px solid; FILTER: progid: DXImageTransform . Microsoft . Gradient( GradientType = 0, StartColorStr = #ffffff, EndColorStr = #C3DAF5 ); BORDER-LEFT: #ffe400 1px solid; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; COLOR: black; FONT-SIZE: 12px; BORDER-TOP: #ffe400 1px solid; CURSOR: hand; BORDER-RIGHT: #ffe400 1px solid; PADDING-TOP: 2px
+}
+.ButtonStyle_mouseup {
+	BORDER-BOTTOM: #2c59aa 1px solid; FILTER: progid: DXImageTransform . Microsoft . Gradient( GradientType = 0, StartColorStr = #ffffff, EndColorStr = #C3DAF5 ); BORDER-LEFT: #2c59aa 1px solid; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; COLOR: black; FONT-SIZE: 12px; BORDER-TOP: #2c59aa 1px solid; CURSOR: hand; BORDER-RIGHT: #2c59aa 1px solid; PADDING-TOP: 2px
+}
+.ButtonStyle3_2k3 {
+	BORDER-BOTTOM: #002d96 1px solid; FILTER: progid: DXImageTransform . Microsoft . Gradient( GradientType = 0, StartColorStr = #FFFFFF, EndColorStr = #9DBCEA ); BORDER-LEFT: #002d96 1px solid; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; COLOR: black; FONT-SIZE: 12px; BORDER-TOP: #002d96 1px solid; CURSOR: hand; BORDER-RIGHT: #002d96 1px solid; PADDING-TOP: 2px
+}
+.ButtonStyleBase {
+	BORDER-BOTTOM: #0090c0 1px solid; BORDER-LEFT: #0070b0 1px solid; BACKGROUND: #0078b8; COLOR: #66dddd; FONT-SIZE: 9pt; BORDER-TOP: #0070b0 1px solid; CURSOR: default; BORDER-RIGHT: #0090c0 1px solid
+}
+.tdclass1 {
+	BORDER-LEFT: #87cefa 1px solid
+}
+.tdclass1Disabled {
+	BORDER-LEFT: #87cefa 1px solid; DISPLAY: none
+}
+.tdclass2 {
+	BORDER-BOTTOM: #87cefa 1px solid
+}
+.tdclass21 {
+	BORDER-BOTTOM: #87cefa 1px solid; COLOR: red
+}
+.tdclass3 {
+	BORDER-BOTTOM: #87cefa 1px solid; BORDER-LEFT: #87cefa 1px solid
+}
+.tdclass31 {
+	BORDER-BOTTOM: #87cefa 1px solid; BORDER-LEFT: #87cefa 1px solid; COLOR: red
+}
+.tdclass3Disabled {
+	BORDER-BOTTOM: #87cefa 1px solid; BORDER-LEFT: #87cefa 1px solid; DISPLAY: none
+}
+.tableStyle {
+	FONT-FAMILY: 宋 体; FONT-SIZE: 9pt
+}
+.tableBorderStyle {
+	BORDER-BOTTOM: #87cefa 1px solid; BORDER-LEFT: #87cefa 1px solid; FONT-FAMILY: 宋 体; FONT-SIZE: 9pt; BORDER-TOP: #87cefa 1px solid; BORDER-RIGHT: #87cefa 1px solid
+}
+.TextAreaDisabledStyle {
+	BACKGROUND-COLOR: #f0faff; FONT-SIZE: 9pt
+}
+.InputDisabledStyle {
+	BACKGROUND-COLOR: #f0faff; WIDTH: 121px; HEIGHT: 20px; FONT-SIZE: 9pt
+}
+.tdbutton {
+	LINE-HEIGHT: 11pt; FONT-VARIANT: normal; FONT-STYLE: normal; FONT-SIZE: 9pt; FONT-WEIGHT: normal; BEHAVIOR: url( "../htc/button.htc" )
+}
+.tdbutton2 {
+	LINE-HEIGHT: 11pt; FONT-VARIANT: normal; FONT-STYLE: normal; FONT-SIZE: 9pt; FONT-WEIGHT: normal; BEHAVIOR: url( "../../htc/button.htc" )
+}
+.box1 {
+	BORDER-BOTTOM: #3e3e3e 1px solid; BORDER-LEFT: #3e3e3e 1px solid; WIDTH: 120px; HEIGHT: 20px; OVERFLOW: hidden; BORDER-TOP: #3e3e3e 1px solid; BORDER-RIGHT: #3e3e3e 1px solid
+}
+.box1Red {
+	BORDER-BOTTOM: #ff0000 1px solid; BORDER-LEFT: #ff0000 1px solid; WIDTH: 120px; HEIGHT: 20px; OVERFLOW: hidden; BORDER-TOP: #ff0000 1px solid; BORDER-RIGHT: #ff0000 1px solid
+}
+.box2 {
+	BORDER-BOTTOM: #ffffff 1px solid; BORDER-LEFT: #ffffff 1px solid; WIDTH: 120px; HEIGHT: 18px; OVERFLOW: hidden; BORDER-TOP: #ffffff 1px solid; BORDER-RIGHT: #ffffff 1px solid
+}
+.selectStyle {
+	BORDER-BOTTOM: 0px; POSITION: relative; BORDER-LEFT: 0px; LINE-HEIGHT: 14px; WIDTH: 120px; COLOR: #333333; BORDER-TOP: 0px; TOP: -2px; BORDER-RIGHT: 0px; LEFT: -2px
+}
+.loginButStyle {
+	BACKGROUND-IMAGE: url(../images/button_bg.gif); BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; WIDTH: 50px; BACKGROUND-POSITION: center 50%; LETTER-SPACING: 5pt; HEIGHT: 20px; COLOR: #000000; FONT-SIZE: 9pt; BORDER-TOP: medium none; TOP: 2px; BORDER-RIGHT: medium none
+}
+.loginButStyle2 {
+	BACKGROUND-IMAGE: url(../images/button_bg1.gif); BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; WIDTH: 85px; BACKGROUND-POSITION: center 50%; LETTER-SPACING: 5pt; HEIGHT: 20px; COLOR: #000000; FONT-SIZE: 9pt; BORDER-TOP: medium none; TOP: 2px; BORDER-RIGHT: medium none
+}
+.div {
+	BORDER-BOTTOM: #5ba4d2 1px groove; BORDER-LEFT: #5ba4d2 1px groove; BACKGROUND-COLOR: #c1ecf9; BORDER-TOP: #5ba4d2 1px groove; BORDER-RIGHT: #5ba4d2 1px groove
+}
+.box3 {
+	BORDER-BOTTOM: #3e3e3e 1px solid; BORDER-LEFT: #3e3e3e 1px solid; WIDTH: 50px; HEIGHT: 21px; OVERFLOW: hidden; BORDER-TOP: #3e3e3e 1px solid; BORDER-RIGHT: #3e3e3e 1px solid
+}
+.box4 {
+	BORDER-BOTTOM: #ffffff 1px solid; BORDER-LEFT: #ffffff 1px solid; WIDTH: 50px; HEIGHT: 19px; OVERFLOW: hidden; BORDER-TOP: #ffffff 1px solid; BORDER-RIGHT: #ffffff 1px solid
+}
+.selectStyle2 {
+	BORDER-BOTTOM: 0px; POSITION: relative; BORDER-LEFT: 0px; LINE-HEIGHT: 14px; WIDTH: 50px; FONT-FAMILY: verdana; COLOR: #333333; BORDER-TOP: 0px; TOP: -2px; BORDER-RIGHT: 0px; LEFT: -2px
+}
+.box5 {
+	BORDER-BOTTOM: #3e3e3e 1px solid; BORDER-LEFT: #3e3e3e 1px solid; WIDTH: 185px; HEIGHT: 21px; OVERFLOW: hidden; BORDER-TOP: #3e3e3e 1px solid; BORDER-RIGHT: #3e3e3e 1px solid
+}
+.box6 {
+	BORDER-BOTTOM: #ffffff 1px solid; BORDER-LEFT: #ffffff 1px solid; WIDTH: 185px; HEIGHT: 19px; OVERFLOW: hidden; BORDER-TOP: #ffffff 1px solid; BORDER-RIGHT: #ffffff 1px solid
+}
+.selectStyle3 {
+	BORDER-BOTTOM: 0px; POSITION: relative; BORDER-LEFT: 0px; LINE-HEIGHT: 14px; WIDTH: 185px; FONT-FAMILY: verdana; COLOR: #333333; BORDER-TOP: 0px; TOP: -2px; BORDER-RIGHT: 0px; LEFT: -2px
+}
+.tdStyle {
+	BACKGROUND-COLOR: #278cc9; COLOR: #ffffff; FONT-SIZE: 9pt
+}
+.dropShadow {
+	FILTER: DropShadow( Color = white, OffX = 1, OffY = 1, ); FONT-SIZE: 14px
+}
+.gridmainbox {
+	BORDER-BOTTOM: #9db3c5 1px solid; BORDER-LEFT: #9db3c5 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 1px; PADDING-RIGHT: 1px; MARGIN-BOTTOM: 10px; BACKGROUND: #fff; BORDER-TOP: #9db3c5 1px solid; BORDER-RIGHT: #9db3c5 1px solid; PADDING-TOP: 1px
+}
+.gridmainbox .headactions {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 1em; PADDING-LEFT: 0px; PADDING-RIGHT: 5px; FLOAT: right; PADDING-TOP: 5px
+}
+.gridmainbox H1 {
+	LINE-HEIGHT: 31px; PADDING-LEFT: 1em; BACKGROUND: url(../images/grid/header_bg.gif) #2f589c repeat-x 0px 0px; COLOR: #fff
+}
+.gridmainbox H3 {
+	LINE-HEIGHT: 31px; PADDING-LEFT: 1em; BACKGROUND: url(../images/grid/header_bg.gif) #2f589c repeat-x 0px 0px; COLOR: #fff
+}
+.gridmainbox H4 {
+	LINE-HEIGHT: 31px; PADDING-LEFT: 1em; BACKGROUND: url(../images/grid/header_bg.gif) #2f589c repeat-x 0px 0px; COLOR: #fff
+}
+.gridmainbox H5 {
+	LINE-HEIGHT: 31px; PADDING-LEFT: 1em; BACKGROUND: url(../images/grid/header_bg.gif) #2f589c repeat-x 0px 0px; COLOR: #fff
+}
+.gridmainbox H6 {
+	LINE-HEIGHT: 31px; PADDING-LEFT: 1em; BACKGROUND: url(../images/grid/header_bg.gif) #2f589c repeat-x 0px 0px; COLOR: #fff
+}
+.gridmainbox H1 A {
+	COLOR: #fff
+}
+.gridmainbox H3 A {
+	COLOR: #fff
+}
+.gridlist TABLE {
+	BORDER-COLLAPSE: separate
+}
+.threadlist TABLE {
+	BORDER-COLLAPSE: separate
+}
+.gridmainbox THEAD TH {
+	PADDING-BOTTOM: 2px; LINE-HEIGHT: 22px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #e8f3fd; COLOR: #666; PADDING-TOP: 2px
+}
+.gridmainbox THEAD TD {
+	PADDING-BOTTOM: 2px; LINE-HEIGHT: 22px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #e8f3fd; COLOR: #666; PADDING-TOP: 2px
+}
+.gridmainbox THEAD.category TH {
+	BACKGROUND: url(../images/grid/cat_bg.gif) #e8f3fd
+}
+.gridmainbox THEAD.category TD {
+	BACKGROUND: url(../images/grid/cat_bg.gif) #e8f3fd
+}
+.gridmainbox THEAD.separation TH {
+	BORDER-LEFT: #cad9ea 1px solid; BORDER-TOP: #cad9ea 1px solid
+}
+.gridmainbox THEAD.separation TD {
+	BORDER-LEFT: #cad9ea 1px solid; BORDER-TOP: #cad9ea 1px solid
+}
+.gridmainbox TH {
+	BORDER-BOTTOM: #cad9ea 1px solid; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BORDER-TOP: #cad9ea 1px solid; PADDING-TOP: 5px
+}
+.gridmainbox TD {
+	BORDER-BOTTOM: #cad9ea 1px solid; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BORDER-TOP: #cad9ea 1px solid; PADDING-TOP: 5px
+}
+.gridmaintabletr1 {
+	BACKGROUND-COLOR: #e0fafe
+}
+.gridmaintabletr2 {
+	BACKGROUND-COLOR: #f5fafe
+}
+.gridmainbox TH {
+	BORDER-BOTTOM: #fff 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #666; FONT-SIZE: 9pt; PADDING-TOP: 1px
+}
+.gridmainbox TBODY TD {
+	BORDER-BOTTOM: #fff 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #666; FONT-SIZE: 9pt; PADDING-TOP: 1px
+}
+.gridmainbox TH {
+	BORDER-BOTTOM: #fff 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #666; FONT-SIZE: 9pt; PADDING-TOP: 1px
+}
+.gridmainbox TD {
+	BORDER-BOTTOM: #fff 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #666; FONT-SIZE: 9pt; PADDING-TOP: 1px
+}
+.divPanel {
+	BORDER-BOTTOM: #9db3c5 1px solid; BORDER-LEFT: #9db3c5 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 1px; PADDING-RIGHT: 1px; WHITE-SPACE: nowrap; MARGIN-BOTTOM: 2px; OVERFLOW: auto; BORDER-TOP: #9db3c5 1px solid; BORDER-RIGHT: #9db3c5 1px solid; PADDING-TOP: 1px
+}
+.flyWin {
+	BORDER-BOTTOM: #9db3c5 1px solid; POSITION: absolute; BORDER-LEFT: #9db3c5 1px solid; BACKGROUND: #f0faff; BORDER-TOP: #9db3c5 1px solid; BORDER-RIGHT: #9db3c5 1px solid
+}
+.flyWin1 {
+	POSITION: absolute; BACKGROUND: #f0faff
+}
+.flyWinTitle {
+	BORDER-BOTTOM: #9db3c5 1px solid; WIDTH: 100%; BACKGROUND: url(../images/panel/white-top-bottom.gif) #2f589c; HEIGHT: 25px; COLOR: #000099; FONT-SIZE: 12px
+}
+.lib_tabborder {
+	BORDER-BOTTOM: #95c9e1 1px solid; BORDER-LEFT: #95c9e1 1px solid; BORDER-TOP: #95c9e1 1px solid; BORDER-RIGHT: #95c9e1 1px solid
+}
+.lib_Menubox {
+	POSITION: relative; LINE-HEIGHT: 28px; HEIGHT: 28px
+}
+.lib_Menubox UL {
+	POSITION: absolute; TEXT-ALIGN: center; PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px 0px 0px 10px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; HEIGHT: 25px; TOP: 3px; PADDING-TOP: 0px; LEFT: 0px
+}
+.lib_Menubox LI {
+	LINE-HEIGHT: 25px; BACKGROUND-COLOR: #e4f2fd; WIDTH: 50px; DISPLAY: block; FLOAT: left; HEIGHT: 25px; COLOR: #949694; CURSOR: pointer; FONT-WEIGHT: bold; MARGIN-RIGHT: 2px
+}
+.lib_Menubox LI.hover {
+	BORDER-LEFT: #95c9e1 1px solid; PADDING-BOTTOM: 0px; LINE-HEIGHT: 25px; PADDING-LEFT: 0px; WIDTH: 50px; PADDING-RIGHT: 0px; BACKGROUND: #fff; HEIGHT: 25px; COLOR: #739242; BORDER-TOP: #95c9e1 1px solid; BORDER-RIGHT: #95c9e1 1px solid; PADDING-TOP: 0px
+}
+.lib_Contentbox {
+	TEXT-ALIGN: center; MARGIN-TOP: 0px; HEIGHT: 100%; CLEAR: both; BORDER-TOP: medium none; PADDING-TOP: 0px
+}
+.divLabel {
+	BORDER-BOTTOM: #309 1px solid; BORDER-LEFT: #309 1px solid; BACKGROUND-COLOR: #eefaff; FONT-SIZE: 12px; BORDER-TOP: #309 1px solid; BORDER-RIGHT: #309 1px solid
+}
+.popDiv {
+	Z-INDEX: 99; POSITION: absolute; TEXT-ALIGN: center; LINE-HEIGHT: 40px; WIDTH: 300px; HEIGHT: 120px; MARGIN-LEFT: -150px !important; FONT-SIZE: 12px; TOP: 50%; ; TOP: expression(eval(document.compatMode &&
+            document.compatMode=='CSS1Compat') ?
+            documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 :
+            document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2); FONT-WEIGHT: bold; LEFT: 50%; FF: 0px
+}
+.popBg {
+	Z-INDEX: 1; POSITION: absolute; FILTER: alpha(opacity = 50); BACKGROUND-COLOR: #ccc; WIDTH: 100%; HEIGHT: 100%; TOP: 0px; ; TOP: expression(eval(document.compatMode &&
+            document.compatMode=='CSS1Compat') ?
+            documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 :
+            document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2); LEFT: 0px; opacity: 0.5
+}
+.popb1 {
+	MARGIN: 0px 3px; DISPLAY: block; BACKGROUND: #b2d0ea; HEIGHT: 1px; CLEAR: both; FONT-SIZE: 1px; OVERFLOW: hidden
+}
+.popb2 {
+	BORDER-LEFT: #b2d0ea 2px solid; MARGIN: 0px 1px; DISPLAY: block; BACKGROUND: #edf7ff; HEIGHT: 1px; CLEAR: both; FONT-SIZE: 1px; OVERFLOW: hidden; BORDER-RIGHT: #b2d0ea 2px solid
+}
+.popb3 {
+	BORDER-LEFT: #b2d0ea 1px solid; MARGIN: 0px 1px; DISPLAY: block; BACKGROUND: #edf7ff; HEIGHT: 1px; CLEAR: both; FONT-SIZE: 1px; OVERFLOW: hidden; BORDER-RIGHT: #b2d0ea 1px solid
+}
+.popbc {
+	BORDER-LEFT: #b2d0ea 1px solid; MARGIN: 0px; DISPLAY: block; BACKGROUND: #edf7ff; CLEAR: both; FONT-SIZE: 12px; OVERFLOW: hidden; BORDER-RIGHT: #b2d0ea 1px solid
+}
+.popbt {
+	PADDING-BOTTOM: 5px; MARGIN: 0px 2px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #edf7ff; PADDING-TOP: 5px
+}
+.popbb {
+	PADDING-BOTTOM: 5px; MARGIN: 0px 2px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #ffffff; PADDING-TOP: 5px
+}
+.treespan {
+	POSITION: relative; BACKGROUND: #ffffff; FONT-SIZE: 12px; TOP: -4px
+}
+.treespan:hover {
+	COLOR: blue
+}

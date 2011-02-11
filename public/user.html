@@ -1,0 +1,753 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="stylesheets/common.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="stylesheets/tsmsWebStyle.css" type="text/css"
+    media="screen">
+    <link rel="STYLESHEET" type="stylesheets/css" href="javascripts/dhtmlx/dhtmlxtabbar.css">
+    <script src="javascripts/dhtmlx/dhtmlxcommon.js">
+    </script>
+    <script src="javascripts/dhtmlx/dhtmlxtabbar.js">
+    </script>
+    <script>
+      document.oncontextmenu = function() {
+	contextmenu.style.posLeft = document.body.scrollLeft + event.x + 10;
+	contextmenu.style.posTop = document.body.scrollTop + event.y + 180;
+    	contextmenu.style.display = "inline";
+        return false;
+      }
+      document.onclick = function() {
+        if (document.activeElement != contextmenu) 
+	  contextmenu.style.display = "none";
+      }
+    </script>
+  </head>
+  <body style="background-color:transparent; overflow:hidden;">
+    <div class="col-main">
+      <div class="main-wrap">
+        <div class="box" id='b1_1' style='display:block;min-width:760px;'>
+          <span class="rc-tp">
+            <span>
+            </span>
+          </span>
+          <div class="hd">
+            <h3>
+              网元设备信息
+            </h3>
+          </div>
+          <div class="bd">
+            <table id="table_user_info" width="100%" class="tableBorderStyle" style="border:0px;">
+              <tr>
+                <td>
+                  地　　区
+                  <input type="text" name="SERV_NBR" class="InputReadOnlyStyle">
+                </td>
+                <td>
+                  业务类型
+                  <input type="text" name="LINE_TYPE_NAME" class="InputReadOnlyStyle">
+                </td>
+                <td>
+                  联系电话
+                  <input type="text" name="CONTACT_NBR" class="InputReadOnlyStyle">
+                </td>
+                <td rowspan="2" valign=top>
+                  用户地址
+                  <textarea rows="2" name="USER_ADDRESS" class="InputReadOnlyStyle" style="height:45px;">
+                  </textarea>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label id="showLabel2">
+                    业务号码
+                  </label>
+                  <input type="text" name="SERV_NBR" class="InputReadOnlyStyle">
+                </td>
+                <td>
+                  线路类型
+                  <input type="text" name="LINE_TYPE_NAME" class="InputReadOnlyStyle">
+                </td>
+                <td>
+                  联系电话
+                  <input type="text" name="CONTACT_NBR" class="InputReadOnlyStyle">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label id="showLabel2">
+                    捆绑号码
+                  </label>
+                  <input type="text" name="BASIC_SERV_NBR" class="InputReadOnlyStyle">
+                </td>
+                <td>
+                  <label id="showLabel5">
+                    计费号码
+                  </label>
+                  <input type="text" name="ASSOCIATE_SERV_NBR" class="InputReadOnlyStyle"
+                  readonly>
+                </td>
+                <td>
+                  用户名称
+                  <input type="text" name="USER_NAME" class="InputReadOnlyStyle">
+                </td>
+                <td valign="middle">
+                  <input type="button" height="20px" value="　查询　" />
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="ft">
+            <ul class="act">
+              <li>
+                <a class="more" href="#">更多</a>
+              </li>
+            </ul>
+          </div>
+          <span class="rc-bt">
+            <span>
+            </span>
+          </span>
+        </div>
+        <div class="box">
+          <span class="rc-tp">
+            <span>
+            </span>
+          </span>
+          <div class="bd" style="text-align:center;">
+            <p>
+              <img src="images/up.png" style="width:120px;height:60px;">
+              <img src="images/line.png" style="padding-bottom:25px;width:80px;">
+              <img src="images/olt.emf" style="width:60px;height:60px;">
+              <img src="images/line.png" style="padding-bottom:25px;width:80px;">
+              <img src="images/onu.emf" style="width:60px;height:60px;">
+              <img src="images/line.png" style="padding-bottom:25px;width:80px;">
+              <img src="images/pc.emf" style="width:60px;height:60px;">
+            </p>
+          </div>
+          <span class="rc-bt">
+            <span>
+            </span>
+          </span>
+        </div>
+            <div id="a_tabbar" style="width:760px; height:390px;margin-top:10px;" />
+            <div id='html_1'>
+              <TABLE class=tableStyle width=747 bgColor=#ffffff>
+                <TBODY>
+                  <TR align=middle>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                      管理状态
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=phyportstate_desc>
+                    </TD>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                      运行状态
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left  width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=phyportstate_desc>
+	      	    </TD>
+	            <TD class=tdStyle height=19 width=120 align=left>
+                      实际传输模式
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left  width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=phyportstate_desc>
+                    </TD>
+                  </TR>
+                  <TR align=middle>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                      信道模式
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=currattainablerateup>
+                    </TD>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                      Atuc速率适配模式
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=currattainablerateup>
+	      	    </TD>
+	            <TD class=tdStyle height=19 width=120 align=left>
+                      Atur速率适配模式
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left  width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=phyportstate_desc>
+                    </TD>
+                  </TR>
+                  <TR align=middle>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                      配置模板
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=currrateup>
+                    </TD>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                      快速通道最大速率
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=currrateup value="上行/下行">
+	            </TD>
+		    <TD class=tdStyle height=19 width=120 align=left>
+                      交织通道最大速率
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left  width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=phyportstate_desc value="上行/下行">
+                    </TD>
+                  </TR>
+                  <TR align=middle>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                     快速通道最小速率
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=configSpeed value="上行/下行">
+                    </TD>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                      交织通道最小速率
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=configSpeed value="上行/下行">
+	            </TD>
+		    <TD class=tdStyle height=19 width=120 align=left>
+                      交织时延
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left  width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=phyportstate_desc>
+                    </TD>
+                  </TR>
+                  <TR align=middle>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                      目标噪声容限
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=currnsemgnup>
+                    </TD>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                      最大噪声容限
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=currnsemgnup>
+	            </TD>
+		    <TD class=tdStyle height=19 width=120 align=left>
+                      端口状态/管理状态
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left  width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=phyportstate_desc>
+                    </TD>
+                  </TR>
+                  <TR align=middle>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                      输出功率(dBm)
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curroutputpwrup value="上行/下行">
+                    </TD>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                      衰减(dB)
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curroutputpwrup value="上行/下行">
+	            </TD>
+		    <TD class=tdStyle height=19 width=120 align=left>
+                      
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left  width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=phyportstate_desc>
+                    </TD>
+                  </TR>
+                  <TR align=middle>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                     
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup>
+                    </TD>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                      
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup>
+	            </TD>
+		    <TD class=tdStyle height=19 width=120 align=left>
+                      
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left  width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=phyportstate_desc>
+                    </TD>
+                  </TR>
+                </TBODY>
+              </TABLE>
+            </div>
+	    <div id='html_2'>
+	      <TABLE class=tableStyle width=747 bgColor=#ffffff>
+	        <TBODY>
+		  <TR align=middle>
+                    <TD class=tdStyle height=19 width=120 colspan="6" align=left>
+                     =================================================PING结果=================================================
+                    </TD>
+	    </TR>
+	    <TR align=middle>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                    发送报文数 
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup>
+                    </TD>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                      接收报文数
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup>
+	            </TD>
+		    <TD class=tdStyle height=19 width=120 align=left>
+                      丢失报文数
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left  width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=phyportstate_desc>
+                    </TD>
+	    </TR>
+	    <TR align=middle>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                    丢包率 
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup>
+                    </TD>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                      最小延迟时间(ms)
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup>
+	            </TD>
+		    <TD class=tdStyle height=19 width=120 align=left>
+                      最大延迟时间(ms)
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left  width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=phyportstate_desc>
+                    </TD>
+	    </TR>
+	    <TR align=middle>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                    平均延迟时间(ms)
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup>
+                    </TD>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                      
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup>
+	            </TD>
+		    <TD class=tdStyle height=19 width=120 align=left>
+                      
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left  width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=phyportstate_desc>
+                    </TD>
+	    </TR>
+	    <TR align=middle>
+                    <TD class=tdStyle height=19 width=120 colspan="6" align=left>
+                     =================================================设备信息=================================================
+                    </TD>
+	    </TR>
+	    <TR align=middle>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                    设备IP
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup>
+                    </TD>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                      设备型号
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup>
+	            </TD>
+		    <TD class=tdStyle height=19 width=120 align=left>
+                      内存利用率
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left  width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=phyportstate_desc>
+                    </TD>
+	    </TR>
+	    <TR align=middle>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                    设备名称
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup>
+                    </TD>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                      CPU利用率
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup>
+	            </TD>
+		    <TD class=tdStyle height=19 width=120 align=left>
+                      软件版本
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left  width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=phyportstate_desc>
+                    </TD>
+	    </TR>
+	    <TR align=middle>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                    温度
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup>
+                    </TD>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                      
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup>
+	            </TD>
+		    <TD class=tdStyle height=19 width=120 align=left>
+                      
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left  width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=phyportstate_desc>
+                    </TD>
+	    </TR>
+	    	  <TR align=middle>
+                    <TD class=tdStyle height=19 width=120 colspan="6" align=left>
+                     =================================================配置信息=================================================
+                    </TD>
+	    	  </TR>
+	    	  <TR align=middle>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                    管理状态 
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup>
+                    </TD>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                      运行状态
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup>
+	            </TD>
+		    <TD class=tdStyle height=19 width=120 align=left>
+                      光纤长度
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left  width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=phyportstate_desc>
+                    </TD>
+	          </TR>
+		  <TR align=middle>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                     ONU管理IP
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup>
+                    </TD>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                      上行固定带宽
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup>
+	            </TD>
+		    <TD class=tdStyle height=19 width=120 align=left>
+                      上行保证带宽
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left  width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=phyportstate_desc>
+                    </TD>
+	          </TR>
+                  <TR align=middle>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                     认证方式
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup>
+                    </TD>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                      上行最大带宽
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup>
+	            </TD>
+		    <TD class=tdStyle height=19 width=120 align=left>
+                      下行最大带宽
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left  width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=phyportstate_desc>
+                    </TD>
+	          </TR>
+	          <TR align=middle>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                     认证信息
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left colspan="5">
+                      <INPUT class=InputStyle3 readOnly style="width:633px;" name=curratnup>
+                    </TD>
+	    	  </TR>
+	    	  <TR align=middle>
+                    <TD class=tdStyle height=19 width=120 colspan="6" align=left>
+                     =================================================板卡信息=================================================
+	     	    </TD>
+	    	  </TR>
+	    	  <TR align=middle>
+                    <TD class=tdStyle height=19 width=120 colspan="6" align=left>
+                     =================================================链路质量=================================================
+                    </TD>
+	    	  </TR>
+	    	  <TR align=middle>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                     发送报文数
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup>
+                    </TD>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                      接收报文数
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup>
+	            </TD>
+		    <TD class=tdStyle height=19 width=120 align=left>
+                      接收到的超短报文数
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left  width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=phyportstate_desc>
+                    </TD>
+	    </TR>
+	    <TR align=middle>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                     发送字节数
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup>
+                    </TD>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                      接收字节数
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup>
+	            </TD>
+		    <TD class=tdStyle height=19 width=120 align=left>
+                      接收到的超长报文数
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left  width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=phyportstate_desc>
+                    </TD>
+	    </TR>
+	    <TR align=middle>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                     发送的单播包数
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup>
+                    </TD>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                      接收到的单播包数
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup>
+	            </TD>
+		    <TD class=tdStyle height=19 width=120 align=left>
+                      接收到的CRC错误报文数
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left  width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=phyportstate_desc>
+                    </TD>
+	    </TR>
+	    <TR align=middle>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                     发送的组播包数
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup>
+                    </TD>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                     接收的组播包数
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup>
+	            </TD>
+		    <TD class=tdStyle height=19 width=120 align=left>
+                      接收到的错误报文数
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left  width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=phyportstate_desc>
+                    </TD>
+	    </TR>
+	    <TR align=middle>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                     发送的广播包数
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup>
+                    </TD>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                      接收的广播包数
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup>
+	            </TD>
+		    <TD class=tdStyle height=19 width=120 align=left>
+                      未发送的错误报文数
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left  width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=phyportstate_desc>
+                    </TD>
+	    </TR>
+	    <TR align=middle>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                     丢弃的发送报文数
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup>
+                    </TD>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                      丢弃的接收报文数
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup>
+	            </TD>
+		    <TD class=tdStyle height=19 width=120 align=left>
+                      
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left  width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=phyportstate_desc>
+                    </TD>
+	          </TR>
+                </TBODY>
+              </TABLE>
+	    </div>
+	    <div id='html_3'>
+	      <TABLE class=tableStyle width=747 bgColor=#ffffff>
+		<TBODY>
+		  <TR align=middle>
+                    <TD class=tdStyle height=19 width=120 colspan="6" align=left>
+                     =================================================设备信息=================================================
+                    </TD>
+	    	  </TR>
+                  <TR align=middle>
+                    <TD class=tdStyle height=19 width=120 colspan="6" align=left>
+                     =================================================板卡信息=================================================
+                    </TD>
+	    	  </TR>
+		  <TR align=middle>
+                    <TD class=tdStyle height=19 width=120 colspan="6" align=left>
+                     ================================================上联口性能================================================
+                    </TD>
+	    	  </TR>
+	    	  <TR align=middle>
+                    <TD class=tdStyle height=19 width=120 colspan="6" align=left>
+                     ================================================PON口信息=================================================
+                    </TD>
+                  </TR>
+	    	  <TR align=middle>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                     PON板状态
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup value="Normal">
+                    </TD>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                      设备型号
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup>
+	            </TD>
+		    <TD class=tdStyle height=19 width=120 align=left>
+                      端口数目
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left  width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=phyportstate_desc value="4">
+                    </TD>
+	          </TR>
+	          <TR align=middle>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                     板卡类型
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup value="EPFC">
+                    </TD>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                      硬件版本
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup value="V1.0">
+	            </TD>
+		    <TD class=tdStyle height=19 width=120 align=left>
+                      内存利用率(%)
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left  width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=phyportstate_desc value="73">
+                    </TD>
+	    	  </TR>
+		  <TR align=middle>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                     板卡业务类型
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup value="EPON">
+                    </TD>
+                    <TD class=tdStyle height=19 width=120 align=left>
+                      软件版本
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=curratnup value="V1.1.3P3T2">
+	            </TD>
+		    <TD class=tdStyle height=19 width=120 align=left>
+                      CPU利用率(%)
+                    </TD>
+                    <TD bgColor=#d2e9f7 align=left  width=129>
+                      <INPUT class=InputStyle3 readOnly style="width:120px;" name=phyportstate_desc value="8">
+                    </TD>
+	          </TR>
+                </TBODY>
+	      </TABLE>
+            </div>
+            <div id='html_4'>
+            </div>
+            <div id='html_5'>
+            </div>
+      </div>
+    </div>
+    <span id="contextmenu" style="border:2px solid #cccccc;background:#89ab83;;width:96px;padding:3px;display:none;position:absolute;color:#ffffff;">
+      <div onmouseover="javascript:this.style.backgroundColor='#3B549A'" onmouseout="javascript:this.style.backgroundColor='#89ab83'"
+      style="border-bottom:2px solid #8fac8a;">
+        item1
+      </div>
+      <div onclick="javascript:alert('haha')">
+        item2
+      </div>
+      <div>
+        item3
+      </div>
+      <div>
+        item4
+      </div>
+      <div>
+        item5
+      </div>
+      <div>
+        item6
+      </div>
+    </span>
+  </body>
+
+</html>
+<script>
+  tabbar = new dhtmlXTabBar("a_tabbar", "top");
+  tabbar.setSkin('dhx_skyblue');
+  tabbar.setImagePath("epon_test/dhtmlx/imgs/");
+  tabbar.addTab("a1", "端口测试信息", "100px");
+  tabbar.addTab("a2", "ONU测试信息", "100px");
+  tabbar.addTab("a3", "OLT测试信息", "100px");
+  tabbar.addTab("a4", "其它设备信息", "100px");
+  tabbar.addTab("a5", "告警信息", "100px");
+
+  tabbar.setContent("a1", "html_1");
+  tabbar.setContent("a2", "html_2");
+  tabbar.setContent("a3", "html_3");
+  tabbar.setContent("a4", "html_4");
+  tabbar.setContent("a5", "html_5");
+
+  tabbar.setTabActive("a1");
+</script>
+

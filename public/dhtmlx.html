@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">	
+<link rel="STYLESHEET" type="text/css" href="javascripts/dhtmlx/dhtmlxtabbar.css">
+<script  src="javascripts/dhtmlx/dhtmlxcommon.js"></script>
+<script  src="javascripts/dhtmlx/dhtmlxtabbar.js"></script>
+ 
+<div id="a_tabbar" style="width:395px; height:390px;"/>
+<div id='html_1'>aaaaa</div>
+<div id='html_2'>bbbbb</div>
+<script>
+tabbar = new dhtmlXTabBar("a_tabbar", "top");
+tabbar.setSkin('dhx_skyblue');
+tabbar.setImagePath("epon_test/dhtmlx/imgs/");
+tabbar.addTab("a1", "Tab 1-1", "100px");
+tabbar.addTab("a2", "Tab 1-2", "100px");
+tabbar.addTab("a3", "Tab 1-3", "100px");
+tabbar.setContent("a1", "html_1");
+tabbar.setContent("a2", "html_2");
+tabbar.setContentHTML("a3", "<br/>The content can be set as <b>HTML</b> node or as <b>HTML</b> text.");
+tabbar.setTabActive("a1");
+</script>
+
