@@ -5,15 +5,15 @@ Copyright (c) 2008-2100, Taobao.com Inc. Some rights reserved.
 
 /**
  * Update Log:
- * 2009-02-12   yubo    1. ¸ø.pic a¼ÓÉÏline-height, ±ÜÃâieÏÂ´¹Ö±¾ÓÖÐ³öÎÊÌâ
-                        2. ÌáÊ¾ÐÅÏ¢Ìí¼ÓhelpÐ¡Í¼±ê
- * 2009-01-08   yubo    µ÷ÕûÐÅÏ¢ÌáÊ¾µÄcss£¬Ôö¼Ó24µÄ³ß´ç£¬ÒÑ¾­Ò³Ãæ¼¶·´À¡
- * 2009-01-06   yubo    1. ¸ù¾ÝÔ²ÐÄµÄ½¨Òé£¬µ÷ÕûboxµÄhack£¬½«È¨ÖØ·Åµ½×îµÍ
-                        2. µ÷ÕûpicµÄcss£¬display: table-cell ·Åµ½ .pic a ÉÏ
- * 2008-12-21	yubo	1. µ÷ÕûboxµÄÄ¬ÈÏÆ¤·ôÎªskin-gray.
-                        2. ÓÅ»¯btnµÄÏ¸Î¢ÑùÊ½
-                        3. Ìí¼ÓÌáÊ¾ÐÅÏ¢ÑùÊ½
-                        4. Ôö¼ÓfloatrightºÍfloatleft
+ * 2009-02-12   yubo    1. ï¿½ï¿½.pic aï¿½ï¿½ï¿½ï¿½line-height, ï¿½ï¿½ï¿½ï¿½ieï¿½Â´ï¿½Ö±ï¿½ï¿½ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½
+                        2. ï¿½ï¿½Ê¾ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½helpÐ¡Í¼ï¿½ï¿½
+ * 2009-01-08   yubo    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½Ê¾ï¿½ï¿½cssï¿½ï¿½ï¿½ï¿½ï¿½ï¿½24ï¿½Ä³ß´ç£¬ï¿½Ñ¾ï¿½Ò³ï¿½æ¼¶ï¿½ï¿½ï¿½ï¿½
+ * 2009-01-06   yubo    1. ï¿½ï¿½ï¿½Ô²ï¿½ÄµÄ½ï¿½ï¿½é£¬ï¿½ï¿½ï¿½ï¿½boxï¿½ï¿½hackï¿½ï¿½ï¿½ï¿½È¨ï¿½Ø·Åµï¿½ï¿½ï¿½ï¿½
+                        2. ï¿½ï¿½ï¿½ï¿½picï¿½ï¿½cssï¿½ï¿½display: table-cell ï¿½Åµï¿½ .pic a ï¿½ï¿½
+ * 2008-12-21	yubo	1. ï¿½ï¿½ï¿½ï¿½boxï¿½ï¿½Ä¬ï¿½ï¿½Æ¤ï¿½ï¿½Îªskin-gray.
+                        2. ï¿½Å»ï¿½btnï¿½ï¿½Ï¸Î¢ï¿½ï¿½Ê½
+                        3. ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ï¢ï¿½ï¿½Ê½
+                        4. ï¿½ï¿½ï¿½ï¿½floatrightï¿½ï¿½floatleft
  * 2008-12-18	yubo	add .invisible, .pic s300, .small-btn etc.
  * 2008-12-15   yubo    add box style
  * 2008-12-13	yubo	created initial version
@@ -51,7 +51,7 @@ Copyright (c) 2008-2100, Taobao.com Inc. Some rights reserved.
 .box .hd,
 .box .rc-tp, .box .rc-tp span,
 .box .rc-bt, .box .rc-bt span {
-    background: url(box_bg.png) no-repeat;
+    background: url(../images/box_bg.png) no-repeat;
 }
 .box .rc-tp, .box .rc-bt {
     position: relative; /* raise z-index, hover .hd */
@@ -213,7 +213,7 @@ Copyright (c) 2008-2100, Taobao.com Inc. Some rights reserved.
  * Pic
  ***********************************************/
 .pic a {
-    display: table-cell; /*·ÇIEµÄÖ÷Á÷ä¯ÀÀÆ÷Ê¶±ðµÄ´¹Ö±¾ÓÖÐµÄ·½·¨*/
+    display: table-cell; /*ï¿½ï¿½IEï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¶ï¿½ï¿½Ä´ï¿½Ö±ï¿½ï¿½ï¿½ÐµÄ·ï¿½ï¿½ï¿½*/
     vertical-align: middle;
     text-align: center;
 }
@@ -381,8 +381,8 @@ button.small-long-btn:hover {
 .msg .ok { background-position: 3px -247px; border-color: #4dbf00; background-color: #f0ffe5; }
 .msg .notice { background-position: 5px -295px; border-color: #40b3ff; background-color: #e6f5ff; }
 .msg .question { background-position: 3px -347px; border-color: #bfbfbf; background-color: #f2f2f2; }
-.msg .small-help { background-position: 5px -1095px; border-color: #fff; background-color: #fff; } /* ±³¾°É«ºÍ±ß¿òÄ¬ÈÏ°×É« */
-.msg .help { background-position: 3px -1197px; border-color: #fff; background-color: #fff; } /* ±³¾°É«ºÍ±ß¿òÄ¬ÈÏ°×É« */
+.msg .small-help { background-position: 5px -1095px; border-color: #fff; background-color: #fff; } /* ï¿½ï¿½ï¿½ï¿½É«ï¿½Í±ß¿ï¿½Ä¬ï¿½Ï°ï¿½É« */
+.msg .help { background-position: 3px -1197px; border-color: #fff; background-color: #fff; } /* ï¿½ï¿½ï¿½ï¿½É«ï¿½Í±ß¿ï¿½Ä¬ï¿½Ï°ï¿½É« */
 
 .msg24 .error, .msg24 .attention, .msg24 .tips, .msg24 .ok, .msg24 .question {
     font-size: 14px;
@@ -444,7 +444,7 @@ button.small-long-btn:hover {
 
 
 /***************************
- * Flow Steps Á÷³Ì²½ÖèÌõ
+ * Flow Steps ï¿½ï¿½ï¿½Ì²ï¿½ï¿½ï¿½ï¿½ï¿½
  ***************************/
 .flow-steps {
     overflow: hidden; /* clearfix */
@@ -458,7 +458,7 @@ button.small-long-btn:hover {
 .flow-steps li {
     float: left;
     background: #e4e4e4 url(http://assets.taobaocdn.com/sys/common/img/flow_steps_bg.png) no-repeat 100% 0;
-    /*list-style: decimal;*/ /* ie6ÏÂ²»ÐÐ */
+    /*list-style: decimal;*/ /* ie6ï¿½Â²ï¿½ï¿½ï¿½ */
     font-size: 14px;
     font-weight: bold;
     height: 23px;
@@ -524,14 +524,14 @@ button.small-long-btn:hover {
 
 /* pic */
 .pic {
-    *overflow: hidden; /* ieÏÂ£¬Ä³Ð©³ß´çµÄÍ¼Æ¬»á¾ÓÖÐÊ±»áÏòÏÂÆ«ÒÆ1px */
+    *overflow: hidden; /* ieï¿½Â£ï¿½Ä³Ð©ï¿½ß´ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ«ï¿½ï¿½1px */
 }
 .pic a {
     *display: block;
-    *font-family: Arial; /*·ÀÖ¹·Çutf-8ÒýÆðµÄhackÊ§Ð§ÎÊÌâ£¬Èçgbk±àÂë*/
-    *line-height: 1; /* ±ÜÃâÐÐ¸ßµ¼ÖÂ´¹Ö±¾ÓÖÐÓÐÎó */
+    *font-family: Arial; /*ï¿½ï¿½Ö¹ï¿½ï¿½utf-8ï¿½ï¿½ï¿½ï¿½ï¿½hackÊ§Ð§ï¿½ï¿½ï¿½â£¬ï¿½ï¿½gbkï¿½ï¿½ï¿½ï¿½*/
+    *line-height: 1; /* ï¿½ï¿½ï¿½ï¿½ï¿½Ð¸ßµï¿½ï¿½Â´ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 }
-/*Ô¼Îª¸ß¶ÈµÄ0.873£¬80*0.873. ²ÉÓÃËÄÉáÎåÈë */
+/*Ô¼Îªï¿½ß¶Èµï¿½0.873ï¿½ï¿½80*0.873. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 .s30 a { *font-size: 26px; }
 .s40 a { *font-size: 35px; }
 .s50 a { *font-size: 44px; }
@@ -545,7 +545,7 @@ button.small-long-btn:hover {
 .s310 a { *font-size: 271px; }
 
 /* btn */
-.btn, .small-btn, .long-btn, .short-btn { *display: inline; } /* ÈÃ°´Å¥³ÉÎªÄÚÁª¿é */
+.btn, .small-btn, .long-btn, .short-btn { *display: inline; } /* ï¿½Ã°ï¿½Å¥ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 
 /* msg */
 .msg, .msg24 { *zoom : 1; }

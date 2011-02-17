@@ -1,205 +1,215 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<title>
-			EPON测试系统.
-		</title>
-		<link rel="stylesheet" href="stylesheets/reset-grids-base.css" type="text/css"
-		media="screen">
-		<link rel="stylesheet" href="stylesheets/common.css" type="text/css" media="screen">
-		<style type="text/css">
-			h1 {
-				font-size: 26px; 
-				color: #00859D; 
-				font-family: Constantia,serif; 
-			}
-			
-			a { 
-				outline: none; 
-			} 
-			
-			img { 
-				border: 1px solid #ccc; 
-				margin: 10px;
-			} 
-				
-		 	#footer { 
-				text-align: center; 
-			} 
-			.bd p { 
-				padding: 0; 
-				line-height: 12px; 
-			} 
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>
+        Box Demo
+    </title>
+    <link rel="stylesheet" href="stylesheets/reset-grids-base.css" type="text/css"
+          media="screen">
+    <link rel="stylesheet" href="stylesheets/common.css" type="text/css" media="screen">
+    <style type="text/css">
+        h1 {
+            font-size: 26px;
+            color: #00859D;
+            font-family: Constantia, serif;
+        }
 
-			.image-disabled * { 
-				background-image: none!important;
-			}
-		</style>
-		<script type="text/javascript">
-			window.onload = function() {
-				var skinSwitchTrigger = document.getElementById('skinSwitcher');
-				skinSwitchTrigger.onclick = function() {
-					var page = document.getElementById('page');
+        a {
+            outline: none;
+        }
 
-					var skinName = page.getAttribute('class');
+        img {
+            border: 1px solid #ccc;
+            margin: 10px;
+        }
 
-					if (skinName && skinName.indexOf('skin-orange') > -1){
-						skinName = 'skin-blue';
-					}
-					else if(skinName && skinName.indexOf('skin-blue') > -1){
-						skinName = '';
-					}
-					else if(skinName==null||skinName==''){
-						skinName = 'skin-orange';
-					}
+        #footer {
+            text-align: center;
+        }
 
-					page.setAttribute('class', skinName);
-					page.setAttribute('className', skinName);
+        .bd p {
+            padding: 0;
+            line-height: 12px;
+        }
 
-					return false;
-				};
+        .image-disabled * {
+            background-image: none !important;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function() {
+            var skinSwitchTrigger = document.getElementById('skinSwitcher');
+            skinSwitchTrigger.onclick = function() {
+                var page = document.getElementById('page');
 
-				var disableImageTrigger = document.getElementById('disableImage');
-				disableImageTrigger.onclick = function() {
-					var page = document.getElementById('page');
+                var skinName = page.getAttribute('class');
 
-					var skinName = page.getAttribute('class');
-					if (skinName && skinName.indexOf('image-disabled') > -1) skinName = skinName.replace('image-disabled', '');
-					else skinName = (skinName ? skinName: '') + ' image-disabled';
+                if (skinName && skinName.indexOf('skin-orange') > -1) {
+                    skinName = 'skin-blue';
+                }
+                else if (skinName && skinName.indexOf('skin-blue') > -1) {
+                    skinName = '';
+                }
+                else if (skinName == null || skinName == '') {
+                    skinName = 'skin-orange';
+                }
 
-					page.setAttribute('class', skinName);
-					page.setAttribute('className', skinName);
+                page.setAttribute('class', skinName);
+                page.setAttribute('className', skinName);
 
-					return false;
-				};
-			};
+                return false;
+            };
 
-			function changeBox(b_id) {
-				document.getElementById('b1_1').style.display = "none";
-				document.getElementById('b1_2').style.display = "none";
-				document.getElementById('b1_3').style.display = "none";
-				document.getElementById('b1_4').style.display = "none";
-				document.getElementById('b2_1').style.display = "none";
-				document.getElementById('b2_2').style.display = "none";
-				document.getElementById('b2_3').style.display = "none";
-				document.getElementById('b3_1').style.display = "none";
+            var disableImageTrigger = document.getElementById('disableImage');
+            disableImageTrigger.onclick = function() {
+                var page = document.getElementById('page');
 
-				document.getElementById(b_id).style.display = "block";
+                var skinName = page.getAttribute('class');
+                if (skinName && skinName.indexOf('image-disabled') > -1) skinName = skinName.replace('image-disabled', '');
+                else skinName = (skinName ? skinName : '') + ' image-disabled';
 
-			}
-		</script>
-	</head>
-	<body bgcolor="#F3FBFE" style="overflow-y:hidden">
-		<table width="100%" border="0" cellpadding="0" cellspacing="0">
-			<tr height="81px">
-				<td  background="images/main_top02.jpg">
-					<div style="font-size:26px;margin-left:10px; color:white;">
-						EPON测试系统
-					</div>
-				</td>
-				<td valign=bottom align=right background="images/main_top02.jpg">
-					<div style="font-size:12px;line-height:150%">
-						<a id="skinSwitcher" href="#" hidefocus="true">换肤</a>
-						<a id="disableImage" href="#" hidefocus="true">去掉背景图</a><br/><br/>
-						当前用户：Lumi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					</div>
-				</td>
-			</tr>
-		</table>
-		<div id="page">
-			<div id="content" class="grid-c2">
-				<div class="col-main">
-					<div class="main-wrap">
-						<iframe scrolling="yes" frameBorder=no style="min-width:770px; height:500px; background-color:transparent;" allowtransparency="true" src="./user"></iframe>
-					</div>
-				</div>
-				<div class="col-sub">
-					<div class="box" style="margin-left: -20px;">
+                page.setAttribute('class', skinName);
+                page.setAttribute('className', skinName);
+
+                return false;
+            };
+        };
+
+        function changeBox(b_id) {
+            document.getElementById('b1_1').style.display = "none";
+            document.getElementById('b1_2').style.display = "none";
+            document.getElementById('b1_3').style.display = "none";
+            document.getElementById('b1_4').style.display = "none";
+            document.getElementById('b2_1').style.display = "none";
+            document.getElementById('b2_2').style.display = "none";
+            document.getElementById('b2_3').style.display = "none";
+            document.getElementById('b3_1').style.display = "none";
+
+            document.getElementById(b_id).style.display = "block";
+
+        }
+    </script>
+</head>
+<body bgcolor="#F3FBFE" style="overflow:hidden">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr height="81px">
+        <td background="images/main_top02.jpg">
+            <div style="font-size:26px;margin-left:10px; color:white;">
+                EPON测试系统
+            </div>
+        </td>
+        <td valign=bottom align=right background="images/main_top02.jpg">
+            <div style="font-size:12px;line-height:150%">
+                <a id="skinSwitcher" href="#" hidefocus="true">换肤</a>
+                <a id="disableImage" href="#" hidefocus="true">去掉背景图</a><br/><br/>
+                当前用户：Lumi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+        </td>
+    </tr>
+</table>
+<div id="page">
+    <div id="content" class="grid-c2">
+        <div class="col-main">
+            <div class="main-wrap">
+                <iframe border=0 scrolling="no" frameBorder=no
+                        style="min-width:802px; height:500px; background-color:transparent;" allowtransparency="true"
+                        src="./user.html"></iframe>
+            </div>
+        </div>
+        <div class="col-sub">
+            <div class="box" style="margin-left: -20px;">
 						<span class="rc-tp">
 							<span>
 							</span>
 						</span>
-						<div class="hd">
-							<h3>
-								ONU基本信息
-							</h3>
-						</div>
-						<div class="bd">
-							<a class="lumi_a" href="#" onclick="javascript:changeBox('b1_1')"><p>网元设备信息</p></a>
-							<a class="lumi_a" href="#" onclick="javascript:changeBox('b1_2')"><p>PING测试</p></a>
-							<a class="lumi_a" href="#" onclick="javascript:changeBox('b1_3')"><p>板卡信息</p></a>
-							<a class="lumi_a" href="#" onclick="javascript:changeBox('b1_4')"><p>ONU光模块信息</p></a>
-						</div>
-						<div class="ft">
-							<ul class="act">
-								<li>
-									<a class="more" href="#">更多</a>
-								</li>
-							</ul>
-						</div>
-						<span class="rc-bt">
-							<span>
-							</span>
-						</span>
-					</div>
-					<div class="box"  style="margin-left: -20px;">
-						<span class="rc-tp">
-							<span>
-							</span>
-						</span>
-						<div class="hd">
-							<h3>
-								ONU Lan板信息
-							</h3>
-						</div>
-						<div class="bd" style="height:100px;">
-							<a href="#" onclick="javascript:changeBox('b2_1')"><p>查询lan用户板信息</p></a>
-							<a href="#" onclick="javascript:changeBox('b2_2')"><p>查询lan用户端口信息</p></a>
-							<a href="#" onclick="javascript:changeBox('b2_3')"><p>端口开关</p></a>
-						</div>
-						<div class="ft">
-							<ul class="act">
-								<li>
-									<a class="more" href="#">更多</a>
-								</li>
-							</ul>
-						</div>
-						<span class="rc-bt">
-							<span>
-							</span>
-						</span>
-					</div>
-					<div class="box" style="margin-left: -20px;">
-						<span class="rc-tp">
-							<span>
-							</span>
-						</span>
-						<div class="hd">
-							<h3>
-								ONU PSTN板信息
-							</h3>
-						</div>
-						<div class="bd" style="height:150px;">
-							<a class="lumi_a" href="#" onclick="javascript:changeBox('b3_1')"><p>查询语音质量信息</p></a>
-						</div>
-						<div class="ft">
-							<ul class="act">
-								<li>
-									<a class="more" href="#">更多</a>
-								</li>
-							</ul>
-						</div>
-						<span class="rc-bt">
-							<span>
-							</span>
-						</span>
-					</div>
-				</div>
-			</div>
 
-		</div>
-	</body>
+                <div class="hd">
+                    <h3>
+                        ONU基本信息
+                    </h3>
+                </div>
+                <div class="bd">
+                    <a class="lumi_a" href="#" onclick="javascript:changeBox('b1_1')"><p>网元设备信息</p></a>
+                    <a class="lumi_a" href="#" onclick="javascript:changeBox('b1_2')"><p>PING测试</p></a>
+                    <a class="lumi_a" href="#" onclick="javascript:changeBox('b1_3')"><p>板卡信息</p></a>
+                    <a class="lumi_a" href="#" onclick="javascript:changeBox('b1_4')"><p>ONU光模块信息</p></a>
+                </div>
+                <div class="ft">
+                    <ul class="act">
+                        <li>
+                            <a class="more" href="#">更多</a>
+                        </li>
+                    </ul>
+                </div>
+						<span class="rc-bt">
+							<span>
+							</span>
+						</span>
+            </div>
+            <div class="box" style="margin-left: -20px;">
+						<span class="rc-tp">
+							<span>
+							</span>
+						</span>
+
+                <div class="hd">
+                    <h3>
+                        ONU Lan板信息
+                    </h3>
+                </div>
+                <div class="bd" style="height:100px;">
+                    <a href="#" onclick="javascript:changeBox('b2_1')"><p>查询lan用户板信息</p></a>
+                    <a href="#" onclick="javascript:changeBox('b2_2')"><p>查询lan用户端口信息</p></a>
+                    <a href="#" onclick="javascript:changeBox('b2_3')"><p>端口开关</p></a>
+                </div>
+                <div class="ft">
+                    <ul class="act">
+                        <li>
+                            <a class="more" href="#">更多</a>
+                        </li>
+                    </ul>
+                </div>
+						<span class="rc-bt">
+							<span>
+							</span>
+						</span>
+            </div>
+            <div class="box" style="margin-left: -20px;">
+						<span class="rc-tp">
+							<span>
+							</span>
+						</span>
+
+                <div class="hd">
+                    <h3>
+                        ONU PSTN板信息
+                    </h3>
+                </div>
+                <div class="bd" style="height:150px;">
+                    <a class="lumi_a" href="#" onclick="javascript:changeBox('b3_1')"><p>查询语音质量信息</p></a>
+                </div>
+                <div class="ft">
+                    <ul class="act">
+                        <li>
+                            <a class="more" href="#">更多</a>
+                        </li>
+                    </ul>
+                </div>
+						<span class="rc-bt">
+							<span>
+							</span>
+						</span>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p>
+            福建邮科通信技术有限公司.
+        </p>
+    </div>
+</div>
+</body>
 
 </html>
 
